@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_116ae58c9287f247f8bb5c1cb6aa95fa66').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,11 +28,11 @@ module.exports = {
           logging: false,
         }),
   PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '905541878489',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'Kara ',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
   LOG_MSG: process.env.LOG_MSG || 'false',
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -42,9 +42,9 @@ module.exports = {
   FORCE_LOGOUT: process.env.FORCE_LOGOUT || 'false',
   BRAINSHOP: process.env.BRAINSHOP || '159501,6pq8dPiYt7PdqHz3',
   DISABLE_BOT: process.env.DISABLE_BOT || 'null',
-  ANTILINK_MSG: process.env.ANTILINK_MSG || '_Antilink Detected &mention kicked_',
-  ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Antispam Detected &mention kicked_',
-  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_AntiWord Detected &mention kicked_',
+  ANTILINK_MSG: process.env.ANTILINK_MSG || 'Linkleme Öperler',
+  ANTISPAM_MSG: process.env.ANTISPAM_MSG || 'Spam mı Basıyorsun Hala Olum Az Büyüyün La',
+  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || 'Olum Nabıyon',
   ANTIWORDS: process.env.ANTIWORDS || 'word',
   MENTION: process.env.MENTION || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
